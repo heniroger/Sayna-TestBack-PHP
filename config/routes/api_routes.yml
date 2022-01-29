@@ -1,0 +1,8 @@
+
+  
+# index_page:
+#     path: /api/users/{id}
+#     controller: Ivehte\Controller\Api\User\DetailController:execute
+#     methods: ['GET']
+#     requirements:
+#         id: '\d+'
