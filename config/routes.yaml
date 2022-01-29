@@ -9,6 +9,6 @@ api_login_check:
     #controller: App\Controller\LoginController:execute
 
 index:
-    path: /allo
+    path: /
     controller: App\Controller\DefaultController:execute
     methods: ['GET']
