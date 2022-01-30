@@ -1,0 +1,6 @@
+kreait_firebase:
+    projects:
+        app:
+            credentials: '%kernel.project_dir%/config/firebase/app_credentials.json'
+            public: true
+            database_uri: 'https://sayna-test-back-default-rtdb.firebaseio.com'
