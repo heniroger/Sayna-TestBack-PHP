@@ -11,10 +11,10 @@ api_login_check:
 api_register:
     path: /api/register
     methods: POST
-    controller: App\Controller\RegisterController:execute
+    controller: App\Controller\RegisterController::execute
 
 
 index:
     path: /
-    controller: App\Controller\DefaultController:execute
+    controller: App\Controller\DefaultController::execute
     methods: ['GET']

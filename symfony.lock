@@ -2,6 +2,9 @@
     "beste/clock": {
         "version": "1.0.0"
     },
+    "brick/math": {
+        "version": "0.9.3"
+    },
     "doctrine/annotations": {
         "version": "1.13",
         "recipe": {
@@ -100,11 +103,29 @@
     "google/cloud-core": {
         "version": "v1.43.2"
     },
+    "google/cloud-firestore": {
+        "version": "v1.20.3"
+    },
     "google/cloud-storage": {
         "version": "v1.26.0"
     },
+    "google/common-protos": {
+        "version": "2.0.0"
+    },
     "google/crc32": {
         "version": "v0.1.0"
+    },
+    "google/gax": {
+        "version": "v1.11.4"
+    },
+    "google/grpc-gcp": {
+        "version": "v0.2.0"
+    },
+    "google/protobuf": {
+        "version": "v3.19.4"
+    },
+    "grpc/grpc": {
+        "version": "1.42.0"
     },
     "guzzlehttp/guzzle": {
         "version": "7.4.1"
@@ -198,6 +219,12 @@
     },
     "ralouphie/getallheaders": {
         "version": "3.0.3"
+    },
+    "ramsey/collection": {
+        "version": "1.2.2"
+    },
+    "ramsey/uuid": {
+        "version": "4.2.3"
     },
     "riverline/multipart-parser": {
         "version": "2.0.9"
