@@ -9,7 +9,9 @@ use App\Delegate\FirebaseDelegateInterface;
 use App\Factory\DataTransfertFactory;
 use App\Middleware\ServerMiddlewareInterface;
 use App\Validator\CheckUserAlreadyExistValidator;
+use App\Validator\EmailValidator;
 use App\Validator\NonEmptyRequiredFieldValidator;
+use App\Validator\PasswordValidator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -35,6 +37,8 @@ class RegisterController extends AbstractController{
         $response = ResponseDto::$output;
 
         $this->serverMiddleware->pipe(new NonEmptyRequiredFieldValidator());
+        $this->serverMiddleware->pipe(new EmailValidator());
+        $this->serverMiddleware->pipe(new PasswordValidator());
         $this->serverMiddleware->pipe(new CheckUserAlreadyExistValidator($this->firebaseDelegate));
         $this->serverMiddleware->process($registerDto, $response);
         
